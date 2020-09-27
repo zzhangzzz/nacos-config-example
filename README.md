@@ -1,5 +1,6 @@
 # nacos-config-example
-一个分享学习nacos 经历的工程 有错误记录及知识点整理
+一个分享学习nacos 经历的工程 有错误记录及知识点整理  
+先熟悉操作 后添加底层原理记录
 
 训练营原文档地址：  
 https://start.aliyun.com/article/sca7lesson/outconfig  
@@ -97,6 +98,8 @@ Nacos Server对应的 context path	       spring.cloud.nacos.config.contextPath	
 自定义 Data Id 配置	spring.cloud.nacos.config.extConfig		属性是个集合，内部由 ConfigPOJO 组成。Config有 3 个属性，分别是 dataId, group以及 refresh
 ~~~~  
 
+http://127.0.0.1:8081/actuator/nacos-config   
+可从服务器查看当前nacos 配置信息 （json格式)
 
 
 #### 记录几个过程中的小问题：

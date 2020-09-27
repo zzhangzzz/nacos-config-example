@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.alibaba.cloud</groupId>
     <artifactId>nacos-config-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>nacos-config-example</name>
+    <name>nacos-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -13,14 +13,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
-        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -34,10 +30,6 @@
                     <artifactId>spring-cloud-commons</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
 
         <dependency>
@@ -89,7 +81,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.0.RELEASE</version>
                 <configuration>
-                    <mainClass>com.alibaba.cloud.nacosconfigexample.NacosConfigExampleApplication</mainClass>
+                    <mainClass>nacos.config.consumer.demo.DemoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
