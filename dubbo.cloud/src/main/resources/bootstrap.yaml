@@ -1,0 +1,17 @@
+dubbo:
+  scan:
+    # dubbo 服务扫描基准包
+  base-packages : org.springframework.cloud.alibaba.dubbo.bootstrap
+
+  protocol:
+    # dubbo 协议
+    name : dubbo
+    # dubbo 协议端口 -1表示自增 从20880开始
+    port : -1
+
+spring:
+  cloud:
+    nacos:
+      #nacos 服务与发现配置
+      discovery:
+        server-addr: 127.0.0.1:8848
